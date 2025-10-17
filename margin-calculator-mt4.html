@@ -1,0 +1,816 @@
+<!doctype html>
+
+
+
+<html lang="en">
+
+
+
+
+
+
+
+<head>
+
+
+
+    <!-- meta tags -->
+
+
+
+    <meta charset="utf-8">
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+    <meta name="description" content="FBK Markets - Trade forex, metals and indices with a trusted South African broker.">
+
+
+
+    <meta name="keywords" content="fbk markets, forex, trading, metatrader, broker">
+
+
+
+    <meta name="author" content="FBK Markets">
+
+
+
+    <meta name="theme-color" content="#fdb913">
+
+
+
+    <!-- preload assets -->
+
+
+
+    <link rel="preload" href="fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+
+
+
+    <link rel="preload" href="fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+
+    <link rel="preload" href="fonts/lato-v24-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+
+
+
+    <link rel="preload" href="fonts/lato-v24-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+
+
+
+    <link rel="preload" href="fonts/lato-v24-latin-300.woff2" as="font" type="font/woff2" crossorigin>
+
+
+
+    <link rel="preload" href="fonts/aleo-v12-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+
+
+
+    <link rel="preload" href="css/style.css" as="style">
+
+
+
+    <link rel="preload" href="js/vendors/bootstrap.bundle.min.js" as="script">
+
+
+
+    <!-- stylesheet -->
+
+
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+    <link rel="stylesheet" href="css/fbk-overrides.css">
+
+
+
+    <!-- favicon -->
+
+
+
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+
+
+    <!-- touch icon -->
+
+
+
+    <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon.png">
+
+
+
+    <title>FBK Markets | Trusted Forex Broker</title>
+
+
+
+</head>
+
+
+
+
+
+
+
+<body id="top">
+
+
+
+    <!-- page loader begin -->
+
+
+
+    <div class="page-loader w-100 h-100 bg-white d-flex justify-content-center align-items-center position-fixed overflow-hidden">
+
+
+
+        <div class="spinner-grow spinner-grow-sm text-primary"></div>
+
+
+
+        <div class="spinner-grow spinner-grow-sm text-primary"></div>
+
+
+
+        <div class="spinner-grow spinner-grow-sm text-primary"></div>
+
+
+
+    </div>
+
+
+
+    <!-- page loader end -->
+
+
+
+    <!-- header begin -->
+  <header class="fbk-header">
+    <div class="fbk-topbar bg-dark text-white">
+      <div class="container d-flex flex-wrap align-items-center justify-content-between gap-2 small py-1">
+        <div class="fbk-top-contact d-flex align-items-center gap-3">
+          <span><i class="fas fa-envelope me-1"></i> support@fbkmarkets.com</span>
+        </div>
+      </div>
+    </div>
+    <div class="container py-3">
+      <nav class="navbar navbar-expand-lg w-100 px-0">
+        <div class="navbar-mobile-header d-flex align-items-center justify-content-between w-100 gap-3">
+          <a class="navbar-brand flex-grow-1 flex-lg-grow-0 text-center text-lg-start m-0" href="index.html">
+            <img src="img/user/header-logo-6d29q8.svg" alt="FBK Markets logo" width="150" height="46"
+              class="d-inline-block" />
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#primaryNav"
+            aria-controls="primaryNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse mt-3 mt-lg-0" id="primaryNav">
+          <ul class="navbar-nav mx-lg-auto align-items-lg-center gap-lg-2 w-100 w-lg-auto" id="primaryNavList">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle d-none d-lg-flex align-items-center gap-1" href="#"
+                id="navAboutDesktop" role="button" data-bs-toggle="dropdown" data-bs-display="static"
+                aria-expanded="false">About Us</a>
+              <button
+                class="nav-link submenu-toggle d-lg-none d-flex align-items-center justify-content-between w-100 collapsed"
+                type="button" data-bs-toggle="collapse" data-bs-target="#mobileAbout" aria-expanded="false"
+                aria-controls="mobileAbout">
+                <span>About Us</span>
+                <i class="fas fa-chevron-down submenu-caret ms-2"></i>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="navAboutDesktop">
+                <li>
+                  <a class="dropdown-item d-flex align-items-center gap-2" href="who-we-are.html"><i
+                      class="fas fa-info-circle"></i><span>What is FBK Markets</span></a>
+                </li>
+                <li>
+                  <a class="dropdown-item d-flex align-items-center gap-2" href="advantages.html"><i
+                      class="fas fa-thumbs-up"></i><span>Advantages of FBK Markets</span></a>
+                </li>
+              </ul>
+              <div class="collapse navbar-submenu d-lg-none" id="mobileAbout" data-bs-parent="#primaryNavList">
+                <a class="dropdown-item d-flex align-items-center gap-2" href="who-we-are.html"><i
+                    class="fas fa-info-circle"></i><span>What is FBK Markets</span></a>
+                <a class="dropdown-item d-flex align-items-center gap-2" href="advantages.html"><i
+                    class="fas fa-thumbs-up"></i><span>Advantages of FBK Markets</span></a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle d-none d-lg-flex align-items-center gap-1" href="#"
+                data-nav-target="markets.html" id="navTradingDesktop" role="button" data-bs-toggle="dropdown"
+                data-bs-display="static" aria-expanded="false">Trading</a>
+              <button
+                class="nav-link submenu-toggle d-lg-none d-flex align-items-center justify-content-between w-100 collapsed"
+                type="button" data-bs-toggle="collapse" data-bs-target="#mobileTrading" aria-expanded="false"
+                aria-controls="mobileTrading">
+                <span>Trading</span>
+                <i class="fas fa-chevron-down submenu-caret ms-2"></i>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="navTradingDesktop">
+                <li>
+                  <a class="dropdown-item d-flex align-items-center gap-2" href="markets.html"><i
+                      class="fas fa-chart-line"></i><span>Markets</span></a>
+                </li>
+                <li>
+                  <a class="dropdown-item d-flex align-items-center gap-2" href="economic-calendar.html"><i
+                      class="fas fa-calendar-alt"></i><span>Economic Calendar</span></a>
+                </li>
+                <li>
+                  <a class="dropdown-item d-flex align-items-center gap-2" href="order-execution.html"><i
+                      class="fas fa-clipboard-check"></i><span>Order Execution Policy</span></a>
+                </li>
+                <li>
+                  <a class="dropdown-item d-flex align-items-center gap-2" href="account-types.html"><i
+                      class="fas fa-layer-group"></i><span>Account Types</span></a>
+                </li>
+                <li>
+                  <a class="dropdown-item d-flex align-items-center gap-2" href="regulation.html"><i
+                      class="fas fa-balance-scale"></i><span>Regulation</span></a>
+                </li>
+                <li>
+                  <a class="dropdown-item d-flex align-items-center gap-2" href="margin-leverage.html"><i
+                      class="fas fa-sliders-h"></i><span>Margin &amp; Leverage</span></a>
+                </li>
+                <li>
+                  <a class="dropdown-item d-flex align-items-center gap-2" href="deposits-withdrawals.html"><i
+                      class="fas fa-wallet"></i><span>Deposits &amp; Withdrawals</span></a>
+                </li>
+              </ul>
+              <div class="collapse navbar-submenu d-lg-none" id="mobileTrading" data-bs-parent="#primaryNavList">
+                <a class="dropdown-item d-flex align-items-center gap-2" href="markets.html"><i
+                    class="fas fa-chart-line"></i><span>Markets</span></a>
+                <a class="dropdown-item d-flex align-items-center gap-2" href="economic-calendar.html"><i
+                    class="fas fa-calendar-alt"></i><span>Economic Calendar</span></a>
+                <a class="dropdown-item d-flex align-items-center gap-2" href="order-execution.html"><i
+                    class="fas fa-clipboard-check"></i><span>Order Execution Policy</span></a>
+                <a class="dropdown-item d-flex align-items-center gap-2" href="account-types.html"><i
+                    class="fas fa-layer-group"></i><span>Account Types</span></a>
+                <a class="dropdown-item d-flex align-items-center gap-2" href="regulation.html"><i
+                    class="fas fa-balance-scale"></i><span>Regulation</span></a>
+                <a class="dropdown-item d-flex align-items-center gap-2" href="margin-leverage.html"><i
+                    class="fas fa-sliders-h"></i><span>Margin &amp; Leverage</span></a>
+                <a class="dropdown-item d-flex align-items-center gap-2" href="deposits-withdrawals.html"><i
+                    class="fas fa-wallet"></i><span>Deposits &amp; Withdrawals</span></a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle d-none d-lg-flex align-items-center gap-1" href="#"
+                data-nav-target="margin-calculator.html" id="navToolsDesktop" role="button" data-bs-toggle="dropdown"
+                data-bs-display="static" aria-expanded="false">Tools</a>
+              <button
+                class="nav-link submenu-toggle d-lg-none d-flex align-items-center justify-content-between w-100 collapsed"
+                type="button" data-bs-toggle="collapse" data-bs-target="#mobileTools" aria-expanded="false"
+                aria-controls="mobileTools">
+                <span>Tools</span>
+                <i class="fas fa-chevron-down submenu-caret ms-2"></i>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="navToolsDesktop">
+                <li>
+                  <a class="dropdown-item d-flex align-items-center gap-2" href="margin-calculator.html"><i
+                      class="fas fa-calculator"></i><span>Margin Calculator</span></a>
+                </li>
+                <li>
+                  <a class="dropdown-item d-flex align-items-center gap-2" href="margin-calculator-micro.html"><i
+                      class="fas fa-coins"></i><span>Micro Account Margin Calculator</span></a>
+                </li>
+                <li>
+                  <a class="dropdown-item d-flex align-items-center gap-2" href="margin-calculator-mt5.html"><i
+                      class="fas fa-chart-area"></i><span>Micro Bonus Margin Calculator MT5</span></a>
+                </li>
+                <li>
+                  <a class="dropdown-item d-flex align-items-center gap-2" href="margin-calculator-mt4.html"><i
+                      class="fas fa-laptop-code"></i><span>Micro Bonus Margin Calculator MT4</span></a>
+                </li>
+              </ul>
+              <div class="collapse navbar-submenu d-lg-none" id="mobileTools" data-bs-parent="#primaryNavList">
+                <a class="dropdown-item d-flex align-items-center gap-2" href="margin-calculator.html"><i
+                    class="fas fa-calculator"></i><span>Margin Calculator</span></a>
+                <a class="dropdown-item d-flex align-items-center gap-2" href="margin-calculator-micro.html"><i
+                    class="fas fa-coins"></i><span>Micro Account Margin Calculator</span></a>
+                <a class="dropdown-item d-flex align-items-center gap-2" href="margin-calculator-mt5.html"><i
+                    class="fas fa-chart-area"></i><span>Micro Bonus Margin Calculator MT5</span></a>
+                <a class="dropdown-item d-flex align-items-center gap-2" href="margin-calculator-mt4.html"><i
+                    class="fas fa-laptop-code"></i><span>Micro Bonus Margin Calculator MT4</span></a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="partners.html">Partners</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle d-none d-lg-flex align-items-center gap-1" href="#"
+                data-nav-target="faq.html" id="navSupportDesktop" role="button" data-bs-toggle="dropdown"
+                data-bs-display="static" aria-expanded="false">Support</a>
+              <button
+                class="nav-link submenu-toggle d-lg-none d-flex align-items-center justify-content-between w-100 collapsed"
+                type="button" data-bs-toggle="collapse" data-bs-target="#mobileSupport" aria-expanded="false"
+                aria-controls="mobileSupport">
+                <span>Support</span>
+                <i class="fas fa-chevron-down submenu-caret ms-2"></i>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="navSupportDesktop">
+                <li>
+                  <a class="dropdown-item d-flex align-items-center gap-2" href="legal-docs.html"><i
+                      class="fas fa-file-contract"></i><span>Legal Documents</span></a>
+                </li>
+                <li>
+                  <a class="dropdown-item d-flex align-items-center gap-2" href="fica-identification.html"><i
+                      class="fas fa-id-card"></i><span>FICA Identification</span></a>
+                </li>
+                <li>
+                  <a class="dropdown-item d-flex align-items-center gap-2" href="regulation.html"><i
+                      class="fas fa-balance-scale"></i><span>Regulation</span></a>
+                </li>
+                <li>
+                  <a class="dropdown-item d-flex align-items-center gap-2" href="faq.html"><i
+                      class="fas fa-question-circle"></i><span>FAQs</span></a>
+                </li>
+                <li>
+                  <a class="dropdown-item d-flex align-items-center gap-2" href="contact.html"><i
+                      class="fas fa-headset"></i><span>Contact Us</span></a>
+                </li>
+              </ul>
+              <div class="collapse navbar-submenu d-lg-none" id="mobileSupport" data-bs-parent="#primaryNavList">
+                <a class="dropdown-item d-flex align-items-center gap-2" href="legal-docs.html"><i
+                    class="fas fa-file-contract"></i><span>Legal Documents</span></a>
+                <a class="dropdown-item d-flex align-items-center gap-2" href="fica-identification.html"><i
+                    class="fas fa-id-card"></i><span>FICA Identification</span></a>
+                <a class="dropdown-item d-flex align-items-center gap-2" href="regulation.html"><i
+                    class="fas fa-balance-scale"></i><span>Regulation</span></a>
+                <a class="dropdown-item d-flex align-items-center gap-2" href="faq.html"><i
+                    class="fas fa-question-circle"></i><span>FAQs</span></a>
+                <a class="dropdown-item d-flex align-items-center gap-2" href="contact.html"><i
+                    class="fas fa-headset"></i><span>Contact Us</span></a>
+              </div>
+            </li>
+          </ul>
+          <div class="mobile-menu-actions d-lg-none">
+            <a href="signin-customer.html" class="btn btn-outline-dark btn-sm w-100">Customer Login</a>
+            <a href="signin-partner.html" class="btn btn-outline-dark btn-sm w-100">Partner Login</a>
+            <a href="register.html" class="btn btn-primary w-100">Start Trading</a>
+          </div>
+          <div class="optional-link d-none d-lg-flex align-items-center justify-content-end gap-3 ms-lg-3">
+            <div class="dropdown">
+              <a class="btn btn-outline-light btn-sm dropdown-toggle" href="#" id="loginDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">Login</a>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="loginDropdown">
+                <li>
+                  <a class="dropdown-item d-flex align-items-center gap-2" href="signin-customer.html"><i
+                      class="fas fa-user"></i><span>Customer Login</span></a>
+                </li>
+                <li>
+                  <a class="dropdown-item d-flex align-items-center gap-2" href="signin-partner.html"><i
+                      class="fas fa-handshake"></i><span>Partner Login</span></a>
+                </li>
+              </ul>
+            </div>
+            <a href="register.html" class="btn btn-primary btn-sm">Start Trading</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+
+
+
+
+
+
+    
+
+
+
+        <main>
+
+
+
+        <section class="fbk-page-hero hero-dark">
+
+
+
+            <div class="container text-center">
+
+
+
+                <span class="fbk-page-subtitle">Tools</span>
+
+
+
+                <h1 class="fbk-page-title">Micro Bonus Margin Calculator MT4</h1>
+
+
+
+                <p class="fbk-page-desc">Reference margin usage for MT4 bonus accounts before executing trades.</p>
+
+
+
+            </div>
+
+
+
+        </section>
+
+
+
+        <section class="fbk-section-default">
+
+
+
+            <div class="container">
+
+
+
+                <h2 class="fw-bold mb-3">Micro bonus calculator (MT4)</h2>
+
+
+
+                <p class="text-muted">Use this resource to understand the margin usage and pip value impact for FBK MT4 bonus accounts.</p>
+
+
+
+                <div class="fbk-highlight-strip bg-white text-dark shadow-sm">
+
+
+
+                    <p class="mb-0">Interactive tools are under development. Meanwhile, download templates from the partner portal or contact us for help.</p>
+
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+        </section>    </main>
+
+
+
+    <!-- footer begin -->
+  <div id="privacy"></div>
+  <footer class="fbk-footer py-5">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-12 col-lg-3">
+          <h5 class="text-uppercase fw-bold mb-3">FBK Markets</h5>
+          <p class="text-muted small mb-3">
+            FBK Markets is the online trading partner for thousands of traders
+            worldwide.
+          </p>
+          <div class="d-flex gap-2">
+            <a href="https://twitter.com" class="footer-icon-btn" target="_blank" rel="noopener"
+              aria-label="FBK Markets on Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com" class="footer-icon-btn" target="_blank" rel="noopener"
+              aria-label="FBK Markets on Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <h5 class="text-uppercase fw-bold mb-3">Useful Links</h5>
+          <ul class="list-unstyled text-muted small mb-0">
+            <li>
+              <a class="link-light text-decoration-none" href="who-we-are.html">Who we are</a>
+            </li>
+            <li>
+              <a class="link-light text-decoration-none" href="contact.html">Contact</a>
+            </li>
+            <li>
+              <a class="link-light text-decoration-none" href="legal-docs.html">Legal Documents</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <h5 class="text-uppercase fw-bold mb-3">Office Hours</h5>
+          <ul class="list-unstyled text-muted small mb-0">
+            <li>Monday - Friday : 8am - 16:00pm</li>
+            <li>Customer support: 24/7</li>
+          </ul>
+        </div>
+        <div class="col-12 col-lg-3">
+          <h5 class="text-uppercase fw-bold mb-3">
+            Get the latest news and info
+          </h5>
+          <form class="newsletter-form" action="#" method="post">
+            <div class="d-flex flex-column flex-sm-row gap-2">
+              <label for="footerNewsletter" class="visually-hidden">Email Address</label>
+              <input type="email" class="form-control" id="footerNewsletter" name="newsletter-email"
+                placeholder="Email Address" required />
+              <button type="submit" class="btn btn-warning">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <hr class="border-light opacity-25 my-4" />
+      <div class="row gy-4 text-muted small">
+        <div class="col-12 col-lg-4">
+          <h6 class="text-uppercase fw-bold text-white mb-3">
+            High Risk Investment Warning
+          </h6>
+          <p class="mb-0">
+            Trading forex and CFD's on margin carries a high level of risk and
+            may not be suitable for all investors. The high degree of leverage
+            can work against you as well as for you. Before deciding to trade
+            forex and CFD's you should carefully consider your investment
+            objectives, level of experience, and risk appetite. The
+            possibility exists that you could sustain a loss of some or all
+            your initial investment and therefore you should not invest money
+            that you cannot afford to lose. You should be aware of all the
+            risks associated with forex and CFD trading and seek advice from
+            an independent financial advisor if you have any doubts.
+          </p>
+        </div>
+        <div class="col-12 col-lg-4">
+          <h6 class="text-uppercase fw-bold text-white mb-3">
+            Legal and Regulation
+          </h6>
+          <p class="mb-0">
+            FBK Markets SA (Pty) Ltd is incorporated in South Africa with
+            registration number 2020/254472/07 and is a duly appointed
+            Juristic Representative of RocketX (Pty) Ltd, a company duly
+            incorporated under the laws of South Africa, with company number
+            2020/824856/07, an authorised financial services provider,
+            licensed and regulated by the Financial Sector Conduct Authority
+            (FSCA) in South Africa, with FSP No. 52142 with registered address
+            at WeWork South Africa, 141 Corobay Avenue Menlyn Tshwane 0181.
+            RocketX (Pty) Ltd an authorised OTC Derivative Provider, is the
+            counterparty, and principal to the contract for difference
+            purchased by you (the Client).
+          </p>
+        </div>
+        <div class="col-12 col-lg-4">
+          <h6 class="text-uppercase fw-bold text-white mb-3">Disclaimer</h6>
+          <p class="mb-0">
+            Please consider that FBK Markets does not offer services to US
+            investors. Additionally, under no conditions is scalping
+            permissible. Information on this site is not directed at residents
+            in any country or jurisdiction where such distribution or use
+            would be contrary to local law or regulation.
+          </p>
+        </div>
+      </div>
+      <p class="text-muted small mt-4">
+        fbkmarkets.com is owned and operated by FBK Markets SA (Pty) Ltd, a
+        company incorporated under the laws of South Africa with registration
+        number 2020/254472/07 and registered address at 400 16th Road, Corner
+        16th and New Road, Randjespark, Midrand and is a duly authorised
+        Juristic Representative of RocketX (Pty) Ltd. RocketX (Pty) Ltd is
+        licensed and regulated by the Financial Sector Conduct Authority (FSP
+        number 52142). RocketX (Pty) Ltd, registration number 2020/824856/07,
+        a company organized and existing under the laws of South Africa, whose
+        registered office is at 141 Corobay Avenue Menlyn Tshwane 0181, are
+        the payment operators of FBK Markets SA (Pty) Ltd, by the laws of
+        South Africa, acting as a paying agent on behalf of FBK Markets SA
+        (Pty) Ltd.
+      </p>
+      <div class="text-center mt-4 small text-muted">
+        &copy; <span id="fbkYear">2025</span> FBK Markets. All Rights
+        Reserved.
+      </div>
+    </div>
+  </footer>
+  <!-- footer end -->
+
+
+
+    <!-- floating buttons -->
+
+
+
+    <div class="fbk-float-buttons">
+
+
+
+        <a href="https://wa.me/27784567890" class="fbk-float-btn whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp Support"><i class="fab fa-whatsapp"></i></a>
+
+
+
+        <a href="contact.html" class="fbk-float-btn chat" aria-label="Live chat"><i class="fas fa-comment"></i></a>
+
+
+
+    </div>
+
+
+
+    <!-- to top begin -->
+
+
+
+    <div class="d-none d-md-block">
+
+
+
+        <a href="#top" class="to-top fas fa-arrow-up text-decoration-none text-white"></a>
+
+
+
+    </div>
+
+
+
+    <!-- to top end -->
+
+
+
+    
+
+
+
+
+
+
+
+    <!-- javascript -->
+
+
+
+    <script src="js/vendors/bootstrap.bundle.min.js"></script>
+
+
+
+    <script src="js/vendors/tradingview-widget.min.js"></script>
+
+
+
+    <script src="https://widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" defer></script>
+
+
+
+    <script src="js/utilities.min.js"></script>
+
+
+
+    <script src="js/config-theme.js"></script>
+
+
+
+    <script>
+
+
+
+        (function () {
+
+
+
+            const header = document.querySelector('.fbk-header');
+
+
+
+            if (!header) return;
+
+
+
+            let ticking = false;
+
+
+
+
+
+
+
+            const updateHeader = () => {
+
+
+
+                const current = window.scrollY || 0;
+
+
+
+                const pastThreshold = current > 120;
+
+
+
+                header.classList.toggle('fbk-header-hidden', pastThreshold);
+
+
+
+                header.classList.toggle('is-scrolled', current > 20);
+
+
+
+                ticking = false;
+
+
+
+            };
+
+
+
+
+
+
+
+            window.addEventListener('scroll', () => {
+
+
+
+                if (!ticking) {
+
+
+
+                    window.requestAnimationFrame(updateHeader);
+
+
+
+                    ticking = true;
+
+
+
+                }
+
+
+
+            }, { passive: true });
+
+
+
+
+
+
+
+            updateHeader();
+
+
+
+
+
+
+
+            const yearEl = document.getElementById('fbkYear');
+
+
+
+            if (yearEl) {
+
+
+
+                yearEl.textContent = new Date().getFullYear();
+
+
+
+            }
+
+
+
+        })();
+
+
+
+    </script>
+
+
+
+</body>
+
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

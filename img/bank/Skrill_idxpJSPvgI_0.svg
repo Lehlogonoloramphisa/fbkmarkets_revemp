@@ -1,0 +1,45 @@
+<svg version="1.1" id="Layer_1" xmlns:x="ns_extend;" xmlns:i="ns_ai;" xmlns:graph="ns_graphs;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 238 81.3" style="enable-background:new 0 0 238 81.3;" xml:space="preserve">
+ <style type="text/css">
+  .st0{clip-path:url(#SVGID_2_);}
+	.st1{fill:url(#SVGID_3_);}
+ </style>
+ <metadata>
+  <sfw xmlns="ns_sfw;">
+   <slices>
+   </slices>
+   <sliceSourceBounds bottomLeftOrigin="true" height="81.3" width="238" x="81" y="89.3">
+   </sliceSourceBounds>
+  </sfw>
+ </metadata>
+ <g id="Layer_2_1_">
+  <g>
+   <defs>
+    <path id="SVGID_1_" d="M161.1,80.5h19.8V24.9h-19.8V80.5z M149.9,24.1c-18.3,0.6-27.6,8.8-27.6,25.1v31.3h20V55
+				c0-9.8,1.3-14,12.9-14.4V24.3c-1.3-0.2-2.7-0.3-4.1-0.3L149.9,24.1 M0,28.7c0,6.4,2.8,21.5,28.3,23.3c2.2,0.1,7.9,0.5,7.9,5.9
+				c0,4.4-4.7,7.1-12.6,7.1C16,64.8,8.5,63.3,1.4,60.6v17.8c8.6,2.1,17.5,3.1,26.4,3c21.8,0,31.6-12.3,31.6-24.5
+				c0-13.8-11-22.8-29.3-24c-2.5-0.2-8.3-0.5-8.3-5.8c0-6.3,8.3-6.3,11.5-6.3c5.5,0,12.6,1.6,17.7,3.2c0,0,2.8,1,5.3,2l0.2,0.1V8.7
+				l-0.3-0.1c-6-2.1-13-4.1-25.9-4.1C7.9,4.5,0,17.5,0,28.7 M64.4,8.5v72h20.4V58.2c5.9,8.9,8.9,22.3,8.9,22.3h24.5
+				c-2.4-10.1-13-28.6-13-28.6c6.3-8.1,11.1-17.2,14.4-27H96.1c-2.7,7-6.5,13.6-11.3,19.4V4.5L64.4,8.5z M189.3,8v72.5h19.8v-76
+				L189.3,8z M218.2,8v72.5H238v-76L218.2,8z M171,0c-5.4,0-9.8,4.4-9.8,9.8c0,5.4,4.4,9.8,9.8,9.8c5.4,0,9.8-4.4,9.8-9.8
+				c0,0,0,0,0,0C180.7,4.4,176.4,0,171,0L171,0z">
+    </path>
+   </defs>
+   <clipPath id="SVGID_2_">
+    <use href="#SVGID_1_" style="overflow:visible;">
+    </use>
+   </clipPath>
+   <g class="st0">
+    <linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="129.66" y1="-300.2469" x2="130.29" y2="-300.2469" gradientTransform="matrix(378.72 0 0 378.72 -49102.6875 113750.1484)">
+     <stop offset="0" style="stop-color:#872165">
+     </stop>
+     <stop offset="1" style="stop-color:#4F2455">
+     </stop>
+     <stop offset="1" style="stop-color:#4F2455">
+     </stop>
+    </linearGradient>
+    <rect class="st1" width="238" height="81.3">
+    </rect>
+   </g>
+  </g>
+ </g>
+</svg>
