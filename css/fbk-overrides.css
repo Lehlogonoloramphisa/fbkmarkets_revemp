@@ -282,9 +282,7 @@ body {
 .xm-hero .carousel-item { position: relative; min-height: 420px; }
 @media (min-width: 992px) { .xm-hero .carousel-item { min-height: 520px; } }
 .xm-hero .xm-hero-bg { position: absolute; inset: 0; z-index: 0; pointer-events: none; }
-.xm-hero .xm-hero-bg img, .xm-hero .xm-hero-bg video {
-    width: 100%; height: 100%; object-fit: cover; display: block; filter: brightness(0.6);
-}
+.xm-hero .xm-hero-bg img, .xm-hero .xm-hero-bg video { width: 100%; height: 100%; object-fit: cover; display: block; filter: brightness(0.6); }
 .xm-hero .container, .xm-hero .carousel-caption, .xm-hero .row, .xm-hero .col-lg-7 { position: relative; z-index: 2; }
 .xm-hero .carousel-indicators, .xm-hero .carousel-control-prev, .xm-hero .carousel-control-next { z-index: 4; }
 .xm-hero-card {

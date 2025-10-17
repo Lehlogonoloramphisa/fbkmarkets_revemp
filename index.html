@@ -280,7 +280,12 @@
           <!-- Slide 1 -->
           <div class="carousel-item active">
             <div class="xm-hero-bg">
-              <img src="img/pages/moncho.png" autoplay muted loop playsinline />
+              <picture>
+                <!-- Mobile-only image -->
+                <source media="(max-width: 767.98px)" srcset="img/pages/mobile.png">
+                <!-- Default/desktop image -->
+                <img src="img/pages/moncho.png" alt="Hero background" />
+              </picture>
             </div>
             <div class="container position-relative">
               <div class="row align-items-center gy-4">
