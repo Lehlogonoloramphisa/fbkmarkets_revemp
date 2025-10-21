@@ -244,7 +244,8 @@ body {
 }
 
 .btn-outline-light:hover {
-    background: rgba(255, 255, 255, 0.849);
+    background: #fdb914;
+    border-color: #fdb914;
     color: var(--fbk-text);
 }
 
@@ -283,6 +284,7 @@ body {
 @media (min-width: 992px) { .xm-hero .carousel-item { min-height: 520px; } }
 .xm-hero .xm-hero-bg { position: absolute; inset: 0; z-index: 0; pointer-events: none; }
 .xm-hero .xm-hero-bg img, .xm-hero .xm-hero-bg video { width: 100%; height: 100%; object-fit: cover; display: block; filter: brightness(0.6); }
+.xm-hero .slide-0 .xm-hero-bg img, .xm-hero .slide-0 .xm-hero-bg video { filter: brightness(0.85); }
 .xm-hero .container, .xm-hero .carousel-caption, .xm-hero .row, .xm-hero .col-lg-7 { position: relative; z-index: 2; }
 .xm-hero .carousel-indicators, .xm-hero .carousel-control-prev, .xm-hero .carousel-control-next { z-index: 4; }
 .xm-hero-card {
@@ -3075,4 +3077,184 @@ html, body { height: auto; min-height: 100%; overflow-y: auto; }
 /* Who We Are: remove grey band */
 .fbk-who-story {
   background: #ffffff !important;
+}
+/* Nested submenu under Trading: desktop hover */
+@media (min-width: 992px) {
+  .fbk-header .dropdown-submenu { position: relative; }
+  .fbk-header .dropdown-submenu > .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    margin-top: -0.25rem;
+    margin-left: 0.25rem;
+    border-radius: 0.85rem;
+    min-width: 14rem;
+  }
+  .fbk-header .dropdown-submenu:hover > .dropdown-menu,
+  .fbk-header .dropdown-submenu:focus-within > .dropdown-menu {
+    display: block;
+  }
+  .fbk-header .dropdown-menu .dropdown-submenu > a.dropdown-item {
+    display: flex; align-items: center; justify-content: space-between;
+  }
+}
+
+/* Decorative helpers for new pages */
+.icon-circle {
+  width: 48px;
+  height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: rgba(253, 185, 19, 0.15);
+  color: var(--fbk-yellow);
+}
+
+.feature-card {
+  border: 1px solid rgba(17, 17, 17, 0.08);
+  border-radius: 1rem;
+  padding: 1.25rem;
+  height: 100%;
+  background: #fff;
+  transition: transform .2s var(--fbk-ease), box-shadow .2s var(--fbk-ease);
+}
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0,0,0,.08);
+}
+
+.cta-panel {
+  border-radius: 1rem;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #111111, #222222);
+  color: #ffffff;
+}
+.cta-panel .btn {
+  box-shadow: 0 10px 24px rgba(253, 185, 19, 0.35);
+}
+
+.video-card {
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+  background: #0f0f0f;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+.video-card .ratio { background: #000; }
+.video-card .play-overlay {
+  position: absolute; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+  background: radial-gradient(transparent, rgba(0,0,0,0.45));
+  color: #fff;
+  transition: background .2s ease;
+}
+.video-card .play-overlay i { font-size: 2.25rem; filter: drop-shadow(0 4px 10px rgba(0,0,0,.35)); }
+.video-card:hover .play-overlay { background: radial-gradient(transparent, rgba(0,0,0,0.6)); }
+
+.badge-soft {
+  background:#fdbb131a;
+  color: #111;
+  border-radius: 999px;
+  padding: .25rem .6rem;
+  font-weight: 600;
+}
+
+/* Platform downloads grouping */
+.platform-downloads .downloads-group .btn { padding-inline: .85rem; }
+.platform-downloads .downloads-group + .downloads-group { position: relative; }
+.platform-downloads .downloads-group + .downloads-group::before {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 22px;
+  background: rgba(255,255,255,.25);
+  margin-inline: .25rem 0.5rem;
+}
+
+/* Ambassador visuals */
+.ambassador-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 999px;
+  object-fit: cover;
+  box-shadow: 0 6px 16px rgba(0,0,0,.12);
+  transition: transform .25s var(--fbk-ease), box-shadow .25s var(--fbk-ease);
+  position: relative;
+  z-index: 1;
+  cursor: zoom-in;
+}
+.ambassador-avatar:hover {
+  transform: scale(1.8);
+  box-shadow: 0 16px 36px rgba(0,0,0,.25);
+  z-index: 5;
+}
+.feature-card { overflow: visible; }
+.icon-circle.icon-lg { width: 72px; height: 72px; font-size: 1.25rem; }
+.amb-photo { width: 100%; height: 220px; object-fit: contain; background: #f5f5f5; border-radius: 0.75rem; }
+@media (min-width: 768px) { .amb-photo { height: 260px; } }
+
+/* Ambassador rows */
+.amb-card { padding: 1rem; border-radius: 1rem; border: 1px solid rgba(17,17,17,.08); }
+.amb-card--yellow { background: var(--fbk-yellow); color: #111; border-color: rgba(17,17,17,.12); }
+.amb-card--yellow .text-muted { color: #3a3000 !important; }
+.amb-card--dark { background: #111; color: #f2f4f8; border-color: rgba(255,255,255,.12); }
+.amb-card--dark .text-muted { color: #cfcfcf !important; }
+.amb-card--dark .badge-soft { background: rgba(255,255,255,.15); color: #fff; }
+.amb-card--dark .amb-photo { background: #f5f5f5; }
+
+/* Scroll long bios in ambassador cards (text only) */
+#ambassadors .feature-card p.mb-2 {
+  max-height: 120px;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+#ambassadors .feature-card p.mb-2::-webkit-scrollbar {
+  width: 6px;
+}
+#ambassadors .feature-card p.mb-2::-webkit-scrollbar-thumb {
+  background: rgba(17,17,17,0.15);
+  border-radius: 6px;
+}
+
+/* Landing popup close button */
+#landingPopupModal .modal-content { position: relative; }
+#landingPopupModal .popup-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--fbk-yellow);
+  border: 2px solid var(--fbk-yellow);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1;
+  z-index: 2;
+  transition: transform .15s var(--fbk-ease), border-color .15s var(--fbk-ease), color .15s var(--fbk-ease);
+}
+#landingPopupModal .popup-close:hover {
+  transform: scale(1.05);
+  border-color: var(--fbk-yellow-dark);
+  color: var(--fbk-yellow-dark);
+}
+#landingPopupModal .popup-close:focus { outline: none; box-shadow: 0 0 0 2px rgba(253,185,19,.35); }
+
+/* Hide Zero Spread and ECN columns only in MT5 comparison table */
+.table-mt5-accounts thead th:nth-child(3),
+.table-mt5-accounts thead th:nth-child(5),
+.table-mt5-accounts tbody td:nth-child(3),
+.table-mt5-accounts tbody td:nth-child(5) {
+  display: none;
+}
+
+/* Mobile nested submenu spacing inside Trading */
+@media (max-width: 991.98px) {
+  #mobileTrading .collapse.ps-4 .dropdown-item { padding-left: 0.25rem; }
 }

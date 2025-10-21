@@ -96,6 +96,7 @@
 
                     toggle.addEventListener('click', (event) => {
                         event.preventDefault();
+                        event.stopPropagation();
                         const isOpen = target.classList.contains('show');
                         closeAll(toggle);
                         if (isOpen) {
