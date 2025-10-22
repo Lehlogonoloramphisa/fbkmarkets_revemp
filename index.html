@@ -227,21 +227,17 @@
                 data-bs-display="static" aria-expanded="false">Education</a>
               <button
                 class="nav-link submenu-toggle d-lg-none d-flex align-items-center justify-content-between w-100 collapsed"
-                type="button" data-bs-toggle="collapse" data-bs-target="#mobileEducation" aria-expanded="false"
-                aria-controls="mobileEducation">
-                <span>Education</span>
+                type="button" data-bs-toggle="collapse" data-bs-target="#mobileSupport" aria-expanded="false"
+                aria-controls="mobileSupport">
+                <span>Insights</span>
                 <i class="fas fa-chevron-down submenu-caret ms-2"></i>
               </button>
               <ul class="dropdown-menu" aria-labelledby="navEducationDesktop">
                 <li>
                   <a class="dropdown-item d-flex align-items-center gap-2" href="education.html"><i
-                      class="fas fa-graduation-cap"></i><span>Education</span></a>
+                      class="fas fa-blog"></i><span>Education</span></a>
                 </li> 
               </ul>
-              <div class="collapse navbar-submenu d-lg-none" id="mobileEducation" data-bs-parent="#primaryNavList">
-                <a class="dropdown-item d-flex align-items-center gap-2" href="education.html"><i
-                    class="fas fa-graduation-cap"></i><span>Education</span></a>
-              </div>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle d-none d-lg-flex align-items-center gap-1" href="blogs&news.html"
@@ -249,9 +245,9 @@
                 data-bs-display="static" aria-expanded="false">Blogs & News</a>
               <button
                 class="nav-link submenu-toggle d-lg-none d-flex align-items-center justify-content-between w-100 collapsed"
-                type="button" data-bs-toggle="collapse" data-bs-target="#mobileBlog" aria-expanded="false"
-                aria-controls="mobileBlog">
-                <span>Blogs & News</span>
+                type="button" data-bs-toggle="collapse" data-bs-target="#mobileSupport" aria-expanded="false"
+                aria-controls="mobileSupport">
+                <span>Insights</span>
                 <i class="fas fa-chevron-down submenu-caret ms-2"></i>
               </button>
               <ul class="dropdown-menu" aria-labelledby="navBlogDesktop">
@@ -260,10 +256,6 @@
                       class="fas fa-blog"></i><span>Blogs & News</span></a>
                 </li> 
               </ul>
-              <div class="collapse navbar-submenu d-lg-none" id="mobileBlog" data-bs-parent="#primaryNavList">
-                <a class="dropdown-item d-flex align-items-center gap-2" href="blogs&news.html"><i
-                    class="fas fa-blog"></i><span>Blogs & News</span></a>
-              </div>
             </li>
           </ul>
           <div class="mobile-menu-actions d-lg-none">
@@ -313,7 +305,7 @@
                 <!-- Mobile-only image -->
                 <source media="(max-width: 767.98px)" srcset="img/pages/Monchobanner3.png">
                 <!-- Default/desktop image -->
-                <img src="img/pages/Monchobanner.png" alt="Hero background" />
+                <img src="img/pages/Monchobanner.png" alt="Hero background" fetchpriority="high" />
               </picture>
             </div>
             <div class="container position-relative">
@@ -376,7 +368,10 @@
           <!-- Slide 2 -->
           <div class="carousel-item">
             <div class="xm-hero-bg">
-              <img src="img/pages/analysis.jpeg" alt="Analysis" />
+              <picture>
+                <source media="(max-width: 767.98px)" srcset="img/pages/analysis.jpeg">
+                <img src="img/pages/analysis.jpeg" alt="Analysis" loading="lazy" decoding="async" />
+              </picture>
             </div>
             <div class="container position-relative">
               <div class="row align-items-center gy-4">
@@ -413,7 +408,10 @@
           <!-- Slide 3 -->
           <div class="carousel-item">
             <div class="xm-hero-bg">
-              <img src="img/pages/irobot.jpeg" alt="Hero background" />
+              <picture>
+                <source media="(max-width: 767.98px)" srcset="img/pages/irobot.jpeg">
+                <img src="img/pages/irobot.jpeg" alt="Hero background" loading="lazy" decoding="async" />
+              </picture>
             </div>
             <div class="container position-relative">
               <div class="row align-items-center gy-4">
@@ -449,7 +447,10 @@
           <!-- Slide 4 -->
           <div class="carousel-item">
             <div class="xm-hero-bg">
-              <img src="img/pages/greybuilding.jpeg" alt="Accounts" />
+              <picture>
+                <source media="(max-width: 767.98px)" srcset="img/pages/greybuilding.jpeg">
+                <img src="img/pages/greybuilding.jpeg" alt="Accounts" loading="lazy" decoding="async" />
+              </picture>
             </div>
             <div class="container position-relative">
               <div class="row align-items-center gy-4">
@@ -486,7 +487,10 @@
           <!-- Slide 5 -->
           <div class="carousel-item">
             <div class="xm-hero-bg">
-              <img src="img/pages/space.jpeg" alt="Education" />
+              <picture>
+                <source media="(max-width: 767.98px)" srcset="img/pages/space.jpeg">
+                <img src="img/pages/space.jpeg" alt="Education" loading="lazy" decoding="async" />
+              </picture>
             </div>
             <div class="container position-relative">
               <div class="row align-items-center gy-4">
@@ -1266,5 +1270,7 @@
 </body>
 
 </html>
+
+
 
 
