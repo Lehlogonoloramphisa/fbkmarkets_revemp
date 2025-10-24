@@ -3258,3 +3258,12 @@ html, body { height: auto; min-height: 100%; overflow-y: auto; }
 @media (max-width: 991.98px) {
   #mobileTrading .collapse.ps-4 .dropdown-item { padding-left: 0.25rem; }
 }
+
+/* Force logo alignment to left on mobile */
+@media (max-width: 991.98px) {
+  .fbk-header .navbar-brand {
+    text-align: left !important;
+    margin-right: auto;
+    flex-grow: 0;
+  }
+}
