@@ -167,10 +167,96 @@
     --fbk-ease: cubic-bezier(0.33, 1, 0.68, 1);
     --fbk-transition-base: 0.35s var(--fbk-ease);
     --fbk-shadow-lift: 0 25px 55px rgba(0, 0, 0, 0.18);
+    --fbk-card-hover-bg: linear-gradient(135deg, #fdb914, #ab8620);
+}
+
+/* Global, consistent button hover behavior */
+.btn {
+  transition: transform var(--fbk-transition-base),
+              box-shadow var(--fbk-transition-base),
+              background-color var(--fbk-transition-base),
+              border-color var(--fbk-transition-base),
+              color var(--fbk-transition-base);
+}
+.btn:hover,
+.btn:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.15);
+}
+.btn:active {
+  transform: translateY(0);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+}
+@media (prefers-reduced-motion: reduce) {
+  .btn { transition: none; }
+  .btn:hover, .btn:focus-visible { transform: none; box-shadow: none; }
 }
 
 /* Global compact typography across the site */
 :root { --bs-root-font-size: 15px; }
+
+/* Compact cards variant (used in margin-leverage last section) */
+.cards-compact .border.rounded-4 {
+  padding: 1rem !important;
+  border-radius: 0.85rem !important;
+}
+.cards-compact h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.5rem !important;
+}
+.cards-compact p { font-size: 0.95rem; line-height: 1.55; }
+
+/* Unified card hover: apply brand gradient */
+.card,
+.fbk-advantage-card,
+.xm-feature,
+.fbk-adv-card,
+.fbk-download-card,
+.fbk-table-card,
+.fbk-mini-card,
+.fbk-support-card,
+.fbk-testimonial-card,
+.border.rounded-4.bg-white.shadow-sm {
+  transition: background var(--fbk-transition-base),
+              border-color var(--fbk-transition-base),
+              color var(--fbk-transition-base),
+              box-shadow var(--fbk-transition-base),
+              transform var(--fbk-transition-base);
+}
+
+.card:hover,
+.fbk-advantage-card:hover,
+.xm-feature:hover,
+.fbk-adv-card:hover,
+.fbk-download-card:hover,
+.fbk-table-card:hover,
+.fbk-mini-card:hover,
+.fbk-support-card:hover,
+.fbk-testimonial-card:hover,
+.border.rounded-4.bg-white.shadow-sm:hover {
+  background: var(--fbk-card-hover-bg);
+  border-color: transparent;
+  color: #111;
+  box-shadow: 0 16px 36px rgba(0,0,0,0.18);
+}
+
+/* Ensure inner text/icons stay legible on gradient */
+.card:hover h1, .card:hover h2, .card:hover h3, .card:hover h4, .card:hover h5, .card:hover h6,
+.card:hover p, .card:hover li, .card:hover small, .card:hover i,
+.fbk-advantage-card:hover h3, .fbk-advantage-card:hover p, .fbk-advantage-card:hover li, .fbk-advantage-card:hover i,
+.xm-feature:hover h3, .xm-feature:hover p, .xm-feature:hover li, .xm-feature:hover i,
+.fbk-adv-card:hover h3, .fbk-adv-card:hover p, .fbk-adv-card:hover li, .fbk-adv-card:hover i,
+.fbk-download-card:hover h3, .fbk-download-card:hover p, .fbk-download-card:hover li, .fbk-download-card:hover i,
+.fbk-table-card:hover h3, .fbk-table-card:hover p, .fbk-table-card:hover li, .fbk-table-card:hover i,
+.fbk-mini-card:hover h3, .fbk-mini-card:hover p, .fbk-mini-card:hover li, .fbk-mini-card:hover i,
+.fbk-support-card:hover h3, .fbk-support-card:hover p, .fbk-support-card:hover li, .fbk-support-card:hover i,
+.fbk-testimonial-card:hover h3, .fbk-testimonial-card:hover p, .fbk-testimonial-card:hover li, .fbk-testimonial-card:hover i,
+.border.rounded-4.bg-white.shadow-sm:hover h3,
+.border.rounded-4.bg-white.shadow-sm:hover p,
+.border.rounded-4.bg-white.shadow-sm:hover li,
+.border.rounded-4.bg-white.shadow-sm:hover i {
+  color: #111 !important;
+}
 
 html, body {
     min-height: 100%;
@@ -810,6 +896,36 @@ body {
 /* Compact typography for Advantages content */
 .fbk-advantages-section .fbk-adv-list .adv-block h3.h5 { font-size: 1rem; }
 .fbk-advantages-section .fbk-adv-list .adv-block p { font-size: 0.95rem; }
+
+/* Economic Calendar intro styles */
+.ec-info .ec-section-title { letter-spacing: .2px; }
+.ec-info .ec-intro { max-width: 820px; }
+.ec-info-card { border: 1px solid #eef1f5 !important; border-radius: 1rem; }
+.ec-info .ec-list > li strong { color: #111; }
+.ec-info .ec-list > li { line-height: 1.7; }
+.ec-info .ec-sublist { padding-left: 1.2rem; margin-top: .25rem; }
+/* Divider between info and calendar */
+.ec-divider { border: 0; height: 1px; background: linear-gradient(to right, rgba(0,0,0,0), #e5e7eb, rgba(0,0,0,0)); }
+
+/* Economic calendar mini-cards (compact) */
+.ec-mini-cards .card-body { padding: 0.65rem 0.75rem !important; }
+.ec-mini-cards h3.h6 { font-size: 0.95rem; margin-bottom: 0.35rem; }
+.ec-mini-cards p, .ec-mini-cards li { font-size: 0.9rem; line-height: 1.5; }
+.ec-mini-cards ul { margin-bottom: 0; }
+/* Hover effect: turn card yellow */
+.ec-mini-cards .card {
+  transition: transform var(--fbk-transition-base), box-shadow var(--fbk-transition-base), background-color var(--fbk-transition-base), border-color var(--fbk-transition-base);
+}
+.ec-mini-cards .card:hover {
+  background: var(--fbk-card-hover-bg);
+  border-color: transparent;
+  transform: translateY(-2px);
+  box-shadow: 0 16px 32px rgba(0,0,0,0.18);
+}
+.ec-mini-cards .card:hover h3,
+.ec-mini-cards .card:hover p,
+.ec-mini-cards .card:hover li,
+.ec-mini-cards .card:hover i { color: #111 !important; }
 
 .fbk-download-icon {
     font-size: 2.6rem;
