@@ -638,6 +638,166 @@ body {
     box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05);
 }
 
+/* =============================
+   Who We Are – Layout Refresh
+   ============================= */
+.fbk-who-hero.hero-dark {
+  background: radial-gradient(1200px 600px at 50% -10%, rgba(253, 185, 19, 0.12), transparent 60%),
+              linear-gradient(180deg, #0f1115 0%, #131720 100%);
+  padding: 4rem 0 3rem;
+}
+
+.fbk-who-quote {
+  font-weight: 800;
+  line-height: 1.3;
+  font-size: clamp(1.25rem, 1rem + 1.5vw, 2rem);
+  max-width: 48rem;
+  margin: 0 auto 0.5rem;
+}
+
+.fbk-who-quote-author {
+  display: inline-block;
+  opacity: 0.75;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+}
+
+.fbk-who-story {
+  background: #ffffff;
+}
+
+.fbk-who-story .card {
+  border: 1px solid #e9ecef;
+  border-radius: 1rem;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.06);
+}
+
+.fbk-who-story .card .card-body {
+  padding: 1.25rem 1.25rem 1.1rem;
+}
+
+.fbk-who-story .card i {
+  font-size: 1.1rem;
+}
+
+.fbk-who-pill {
+  background: #fff;
+  border: 1px solid #eef1f5;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.05);
+  transition: transform var(--fbk-transition-base), box-shadow var(--fbk-transition-base);
+}
+
+.fbk-who-pill:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 36px rgba(0,0,0,0.08);
+}
+
+.fbk-who-pill .icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: rgba(253, 185, 19, 0.18);
+  display: grid;
+  place-items: center;
+  color: var(--fbk-dark);
+  font-size: 1.15rem;
+}
+
+.fbk-who-photo img {
+  width: 85%;
+  max-width: 420px;
+  filter: drop-shadow(0 20px 35px rgba(0,0,0,0.18));
+}
+
+.fbk-advantages-cta {
+  background: linear-gradient(180deg, #fafafa 0%, #ffffff 100%);
+}
+
+/* =============================
+   Advantages – Visual Refresh
+   ============================= */
+.fbk-advantages-section.is-themed {
+  background: #ffffff;
+  color: #111;
+}
+.fbk-advantages-section.is-themed p,
+.fbk-advantages-section.is-themed h2 { color: #111; }
+.fbk-advantages-section.is-themed h2.text-white { color: #111 !important; }
+.fbk-advantages-section .card {
+  background: #ffffff;
+  border: 1px solid #eceff3;
+  border-radius: 0.85rem;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.06);
+}
+.fbk-advantages-section .card-body {
+  padding: 1rem 1rem 0.9rem;
+}
+.fbk-advantages-section .card i { font-size: 1rem; }
+.fbk-advantages-section .card h3 { font-weight: 700; }
+.list-compact li { margin-bottom: 0.25rem; }
+@media (min-width: 992px) {
+  .list-two-col { column-count: 2; column-gap: 1.25rem; }
+  .list-two-col li { break-inside: avoid; }
+}
+
+/* Badges band */
+.fbk-badges {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 1rem;
+  padding: 1rem;
+  transition: background var(--fbk-transition-base), box-shadow var(--fbk-transition-base);
+}
+
+.fbk-badge {
+  background: #111;
+  color: #f7f7f7;
+  border: 1px solid rgba(255,255,255,0.08);
+  padding: 0.8rem 1rem;
+  border-radius: 0.85rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  transition: transform var(--fbk-transition-base), box-shadow var(--fbk-transition-base);
+}
+.fbk-badge:hover {
+  background: var(--fbk-yellow);
+  color: #111;
+  border-color: var(--fbk-yellow);
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.18);
+}
+.fbk-badge:hover i { color: #111; }
+.fbk-badge:active { transform: translateY(0); box-shadow: 0 6px 14px rgba(0,0,0,0.2); }
+.fbk-badge i { color: #fdb913; }
+.fbk-float-globe { filter: drop-shadow(0 18px 32px rgba(0,0,0,0.25)); max-width: 420px; width: 85%; will-change: transform; animation: fbk-spin-360 16s linear infinite; transform-origin: 50% 50%; }
+.fbk-float-globe:hover { animation-duration: 10s; }
+@keyframes fbk-spin-360 {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .fbk-float-globe { animation: none; }
+}
+
+/* White section + black cards variant */
+.fbk-advantages-section.is-themed .card {
+  background: #0f0f0f;
+  border-color: #1c1c1c;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.12);
+}
+.fbk-advantages-section.is-themed .card h3 { color: #ffffff; }
+.fbk-advantages-section.is-themed .card p,
+.fbk-advantages-section.is-themed .card li { color: rgba(255,255,255,0.82); }
+.fbk-advantages-section.is-themed .card .text-muted { color: rgba(255,255,255,0.72) !important; }
+
+/* Paragraph-styled list blocks */
+.fbk-adv-list .adv-block { }
+.fbk-adv-list .adv-block h3 { font-weight: 800; letter-spacing: .2px; }
+.fbk-adv-list .adv-block .text-muted p { line-height: 1.6; }
+
 .fbk-download-icon {
     font-size: 2.6rem;
     color: var(--fbk-yellow);
@@ -1262,6 +1422,7 @@ body {
 
 .fbk-section-default {
     padding: 5rem 0;
+    background-color: white;
 }
 
 .fbk-section-muted {
@@ -2205,11 +2366,11 @@ body {
     max-width: 360px;
     width: 100%;
     border-radius: 1.5rem;
-    box-shadow: 0 25px 55px rgba(15, 23, 42, 0.15);
+    box-shadow: 0 25px 55px rgba(15, 23, 42, 0);
 }
 
 .fbk-advantages-cta {
-    background: linear-gradient(135deg, #fdb914, #ab8620);
+    background: linear-gradient(135deg, #ffffff, #ffffff);
 }
 
 @media (max-width: 767px) {
@@ -3000,9 +3161,7 @@ body {
 }
 html, body { height: auto; min-height: 100%; overflow-y: auto; }
 .fbk-auth-panel form { max-width: 720px; }
-.fbk-advantages-section.xm-section {
-  background: linear-gradient(135deg, rgba(10,10,10,0.9), rgba(0,0,0,0.92)), url('../img/pages/space.jpeg') center/cover no-repeat;
-}
+
 .xm-section .fbk-advantage-card {
   background: #111111;
   border: 1px solid #1f1f1f;
