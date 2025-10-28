@@ -328,8 +328,8 @@ body {
 }
 
 .btn-outline-light {
-    color: #c9c9c9;
-    border-color: rgb(255 255 255 / 17%);
+    color: #000000;
+    border-color: rgba(211, 211, 211, 0.683);
 }
 
 .btn-outline-light:hover {
@@ -372,8 +372,8 @@ body {
 .xm-hero .carousel-item { position: relative; min-height: 420px; }
 @media (min-width: 992px) { .xm-hero .carousel-item { min-height: 520px; } }
 .xm-hero .xm-hero-bg { position: absolute; inset: 0; z-index: 0; pointer-events: none; }
-.xm-hero .xm-hero-bg img, .xm-hero .xm-hero-bg video { width: 100%; height: 100%; object-fit: cover; display: block; filter: brightness(0.6); }
-.xm-hero .slide-0 .xm-hero-bg img, .xm-hero .slide-0 .xm-hero-bg video { filter: brightness(0.85); }
+.xm-hero .xm-hero-bg img, .xm-hero .xm-hero-bg video { width: 100%; height: 100%; object-fit: cover; display: block; filter: none; }
+.xm-hero .slide-0 .xm-hero-bg img, .xm-hero .slide-0 .xm-hero-bg video { filter: none; }
 .xm-hero .container, .xm-hero .carousel-caption, .xm-hero .row, .xm-hero .col-lg-7 { position: relative; z-index: 2; }
 .xm-hero .carousel-indicators, .xm-hero .carousel-control-prev, .xm-hero .carousel-control-next { z-index: 4; }
 .xm-hero-card {
